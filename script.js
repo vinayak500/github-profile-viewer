@@ -18,6 +18,7 @@ function populate(data){
     imagediv.appendChild(img);
 
         const leftcontainer = document.getElementById('left-container');
+        const rightcontainer = document.getElementById('right-container');
 
          const div = document.createElement('div');
          div.innerHTML=`<h2> ${data.name}`;
@@ -33,6 +34,15 @@ function populate(data){
          const div3 = document.createElement('div');
          div3.innerHTML = `<a href="${data.html_url}"> github profile </a>`;
          leftcontainer.appendChild(div3);
+
+
+
+
+          const repodiv = document.createElement('div');
+          repodiv.innerHTML=`<h2>REPOSITRIES</h2>`;
+         rightcontainer.appendChild(repodiv);
+
+
 
 }
 
